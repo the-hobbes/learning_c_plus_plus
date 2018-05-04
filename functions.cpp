@@ -30,7 +30,7 @@ void f(int a) {
 }
 
 void f(int *b) {
-    // local copy is incremented, but caller's copy remains the same
+    // The caller's copy is incremented by 1.
     // dereference the pointer using the "*" operator to get at the value of b
     ++(*b);
 }
